@@ -6,8 +6,8 @@ require("geckodriver")
 
 const login = "Admin";
 const password = "admin123";
-const empname= "Paul Collings";
-const uname = "Dima12345667";
+const empname= "soujanya sangala";
+const uname = "Dima1230597";
 const code="Dima_Babiuk228";
 
 
@@ -64,5 +64,6 @@ if(await driver.findElement(By.linkText(uname)).isEnabled())
     console.log("Element haven't been deleted ");
     else
 console.log("Element has beem successfully deleted");
+await driver.findElement(By.id("dialogDeleteBtn")).click();
 }
 func();
